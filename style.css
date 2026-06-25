@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #e5533d;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #ff6347;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #e5533d;
+}
+
+.restaurant-list, .menu-list, .food-list, .category-list, .suggestions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurant-item, .food-item, .suggestion-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.restaurant-item h3, .food-item h3, .suggestion-item h3 {
+    color: #ff6347;
+}
+
+/* Home Page Styles */
+.home-page-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.catchy-phrases {
+    font-size: 1.5em;
+    color: #ff6347;
+    margin: 20px 0;
+}
+
+.home-page-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Additional styles for the previous pages */
+.food-item-details {
+    display: none;
+    margin-top: 10px;
+}
+
+.food-item h4 {
+    color: #ff6347;
+    font-size: 24px;
+    margin: 0;
+}
+
+.food-item-details p {
+    margin: 5px 0;
+}
+
+#menu-page {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .restaurant-item, .food-item {
+        width: 100%;
+    }
+}
