@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Food - Coimbatore</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Know Your Food</h1>
+        <h2>Coimbatore</h2>
+        <nav>
+            <a href="#" onclick="showPage('home-page')">Home</a>
+            <a href="#" onclick="showPage('restaurants-page')">Restaurants</a>
+            <a href="#" onclick="showPage('categories-page')">Categories</a>
+            <a href="#" onclick="showPage('suggestions-page')">Suggestions</a>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home-page" style="display: block;">
+        <main class="home-page-content">
+            <h2>Welcome to Know Your Food</h2>
+            <div class="catchy-phrases">
+                <p>"Your journey to healthy and delicious food starts here!"</p>
+                <p>"Discover, Savor, and Nourish yourself with the best restaurants in Coimbatore."</p>
+            </div>
+            <p>We believe that knowing your food is the first step toward a healthier and happier lifestyle. At Know Your Food, we bring together the best restaurants in Coimbatore with detailed information about their menus and nutritional values.</p>
+            <button onclick="showPage('restaurants-page')">Explore Restaurants</button>
+        </main>
+    </div>
+
+    <!-- Restaurant List Page -->
+    <div id="restaurants-page" style="display: none;">
+        <header>
+            <h2>Restaurants in Coimbatore</h2>
+        </header>
+        <main>
+            <div class="restaurant-list" id="restaurant-list"></div>
+            <button onclick="showPage('home-page')">Back to Home</button>
+        </main>
+    </div>
+
+    <!-- Categories Page -->
+    <div id="categories-page" style="display: none;">
+        <header>
+            <h2>Food Categories</h2>
+        </header>
+        <main>
+            <div class="category-list">
+                <div class="restaurant-item">
+                    <h3>Vegetarian</h3>
+                    <p>Perfect for vegetarians or anyone looking to cut down on meat.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>ORGANIC</h3>
+                    <p>Suitable for those looking to reduce carbs while maintaining energy levels.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>NON VEGETARIAN</h3>
+                    <p>Perfect for vegetarians or anyone looking to cut down on meat.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>High Protein</h3>
+                    <p>For gym lovers and those needing a protein boost.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>Low Carb</h3>
+                    <p>Suitable for those looking to reduce carbs while maintaining energy levels.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>FOR KIDS</h3>
+                    <p>Perfect for vegetarians or anyone looking to cut down on meat.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>FOR YOUNGSTERS</h3>
+                    <p>Suitable for those looking to reduce carbs while maintaining energy levels.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>FOR ELDERS</h3>
+                    <p>Perfect for vegetarians or anyone looking to cut down on meat.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>WEIGHT LOSS</h3>
+                    <p>For gym lovers and those needing a protein boost.</p>
+                </div>
+                <div class="restaurant-item">
+                    <h3>WEIGHT GAIN</h3>
+                    <p>Suitable for those looking to reduce carbs while maintaining energy levels.</p>
+                </div>
+            </div>
+            <button onclick="showPage('home-page')">Back to Home</button>
+        </main>
+    </div>
+
+    <!-- Suggestions Page -->
+    <div id="suggestions-page" style="display: none;">
+        <header>
+            <h2>Food Suggestions</h2>
+        </header>
+        <main>
+            <div class="suggestions-list" id="suggestions-list">
+                <div class="suggestion-item">
+                    <h3>Salad Bowl (Vegetarian)</h3>
+                    <p>Rich in fibers, vitamins, and minerals.</p>
+                </div>
+                <div class="suggestion-item">
+                    <h3>Grilled Chicken (High Protein)</h3>
+                    <p>Packed with lean protein for muscle building.</p>
+                </div>
+                <div class="suggestion-item">
+                    <h3>Paneer Tikka (Low Carb)</h3>
+                    <p>Delicious, low-carb Indian appetizer for your fitness goals.</p>
+                </div>
+            </div>
+            <button onclick="showPage('home-page')">Back to Home</button>
+        </main>
+    </div>
+
+    <!-- Restaurant Menu Page -->
+    <div id="restaurant-page" style="display: none;">
+        <header>
+            <h2 id="restaurant-name">Menu</h2>
+        </header>
+        <main>
+            <div class="menu-list" id="menu-list"></div>
+            <button onclick="showPage('restaurants-page')">Back to Restaurants</button>
+        </main>
+    </div>
+
+    <!-- Food Details Page -->
+    <div id="food-page" style="display: none;">
+        <header>
+            <h2 id="food-name">Food Details</h2>
+        </header>
+        <main>
+            <p id="food-ingredients"></p>
+            <p id="food-calories"></p>
+            <p id="food-fat"></p>
+            <p id="food-protein"></p>
+            <p id="food-price"></p>
+            <button onclick="showPage('restaurant-page')">Back to Menu</button>
+        </main>
+    </div>
+
+    <script src="data/restaurants.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
